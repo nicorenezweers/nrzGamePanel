@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#2a2a2a"/>
+  <g transform="translate(128 132)">
+    <!-- Würfel (Block) -->
+    <path d="M0 -84 L74 -42 L0 0 L-74 -42 Z" fill="#ededed"/>
+    <path d="M-74 -42 L0 0 L0 86 L-74 44 Z" fill="#a3a3a3"/>
+    <path d="M74 -42 L0 0 L0 86 L74 44 Z" fill="#6b6b6b"/>
+    <!-- Zahnrad-Ausschnitt (Factorio) -->
+    <circle cx="37" cy="22" r="17" fill="#2a2a2a"/>
+    <circle cx="37" cy="22" r="7" fill="#6b6b6b"/>
+    <!-- Pixel (Minecraft) -->
+    <rect x="-52" y="-6" width="14" height="14" fill="#2a2a2a"/>
+    <rect x="-34" y="14" width="14" height="14" fill="#2a2a2a"/>
+    <rect x="-52" y="30" width="14" height="14" fill="#2a2a2a"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "store": "nicorenezweers/nrzStore",
+  "app": "nrz-gamepanel",
+  "tagPrefix": "umbrel-",
+  "package": "package",
+  "releaseNotes": "Weboberflaeche ueber Port 8700 erreichbar (App-Proxy nutzt jetzt das Gateway des Umbrel-Netzes).",
+  "manifest": {
+    "name": "nrzGamePanel",
+    "tagline": "Minecraft- und Factorio-Server verwalten - in Rust, im Host-Modus",
+    "icon": "http://100.78.107.162:8390/nicorenezweers/nrzStore/raw/branch/main/nrz-gamepanel/icon.png",
+    "port": 8700
+  }
+}

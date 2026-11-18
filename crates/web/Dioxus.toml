@@ -1,0 +1,12 @@
+[application]
+name = "nrzGamePanel"
+
+[web.app]
+title = "nrzGamePanel"
+
+# Entwicklung: `cargo run -p nrz-gamepanel` (Port 8700) + `dx serve` hier → API wird weitergeleitet.
+[[web.proxy]]
+backend = "http://127.0.0.1:8700/api/"
+
+[[web.proxy]]
+backend = "http://127.0.0.1:8700/mcp"
