@@ -7,7 +7,7 @@
 //!   `EmptyState`, `LoadingState`.
 //! - Anmeldung: `AuthFrame` (zentriert, mit Lichtflecken).
 //!
-//! Braucht `nrz-theme.css` und `nrz-app.css` (macht `nrzui init`). Regeln: DESIGN.md.
+//! Braucht den nrzUI-Stil aus `style/nrzui.rs` (wird von build.rs eingebaut). Regeln: DESIGN.md.
 
 use dioxus::prelude::*;
 use tw_merge::tw_merge;

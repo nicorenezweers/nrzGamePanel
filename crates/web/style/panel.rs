@@ -1,9 +1,7 @@
-@import "tailwindcss";
-@import "./style/nrz-theme.css";
-@import "./style/nrz-app.css";
+// Panel-eigene Stile, ergänzend zu style/nrzui.rs.
 
-@source "./src/**/*.rs";
-
+// Konsole und Pixelgrafik.
+pub const PANEL: &str = r#"
 /* Konsole: Zeilen umbrechen, Monospace */
 .console-line {
   white-space: pre-wrap;
@@ -14,3 +12,4 @@
 .pixelated {
   image-rendering: pixelated;
 }
+"#;

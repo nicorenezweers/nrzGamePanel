@@ -1,3 +1,6 @@
+// Fertig gebautes CSS (Tailwind + style/nrzui.rs + style/panel.rs) für Builds ohne Tailwind-CLI.
+// Nicht von Hand ändern: `NRZ_CSS_UPDATE=1 cargo check -p nrz-gamepanel-web --target wasm32-unknown-unknown`.
+pub const CSS: &str = r#"
 /*! tailwindcss v4.1.5 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
@@ -3404,3 +3407,4 @@ html.light {
     }
   }
 }
+"#;

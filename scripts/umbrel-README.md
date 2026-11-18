@@ -1,7 +1,7 @@
 # nrzGamePanel – Umbrel-Paket
 
 Nur fertige Dateien für die App **nrz-gamepanel** im nrzStore (der Quellcode liegt im Repo
-`nicorenezweers/nrzGamePanel`). Erzeugt von `scripts/umbrel-release.sh`.
+`nicorenezweers/nrzGamePanel`). Erzeugt von `cargo xtask umbrel-release`.
 
 | Datei | Inhalt |
 |-------|--------|

@@ -1,14 +1,16 @@
-#!/usr/bin/env bash
+// Umbrel-Hook `hooks/pre-start` (läuft auf dem Gerät, dort gibt es nur die Shell).
+// `{RELEASE}` wird beim Paketieren durch den Tag ersetzt.
+pub const PRE_START: &str = r#"#!/usr/bin/env bash
 set -euo pipefail
 
 APP_DIR="${APP_DATA_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
 
 # nrzGamePanel kommt ohne eigenes Image und ohne Registry-Login: Programm (Rust) und Oberflaeche
 # (Dioxus/WASM) liegen im oeffentlichen Paket-Repo nrzGamePanel-umbrel auf nrzGit auf diesem Geraet
-# (Zweig `umbrel`, Tag unten, gebaut mit scripts/umbrel-release.sh im Repo nrzGamePanel). Beim
+# (Zweig `umbrel`, Tag unten, gebaut mit `cargo xtask umbrel-release` im Repo nrzGamePanel). Beim
 # ersten Start und nach Updates werden sie fuer die Architektur dieses Geraets nach app/ geladen
 # und geprueft.
-RELEASE="umbrel-1.0.0"
+RELEASE="{RELEASE}"
 BASE="http://localhost:8390/nicorenezweers/nrzGamePanel-umbrel/raw/tag/${RELEASE}"
 
 case "$(uname -m)" in
@@ -69,3 +71,4 @@ fi
 mkdir -p "${APP_DIR}/data"
 chown 1000:1000 "${APP_DIR}/data" 2>/dev/null || true
 find "${APP_DIR}/data" -maxdepth 2 ! -user 1000 -exec chown 1000:1000 {} + 2>/dev/null || true
+"#;

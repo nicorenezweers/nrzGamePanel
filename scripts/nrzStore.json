@@ -3,7 +3,7 @@
   "app": "nrz-gamepanel",
   "tagPrefix": "umbrel-",
   "package": "package",
-  "releaseNotes": "Weboberflaeche ueber Port 8700 erreichbar (App-Proxy nutzt jetzt das Gateway des Umbrel-Netzes).",
+  "releaseNotes": "Allgemeine Fixes und Aufraeumarbeiten an Build und Oberflaeche.",
   "manifest": {
     "name": "nrzGamePanel",
     "tagline": "Minecraft- und Factorio-Server verwalten - in Rust, im Host-Modus",

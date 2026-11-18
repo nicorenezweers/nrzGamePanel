@@ -2,7 +2,7 @@ manifestVersion: 1
 id: nrz-gamepanel
 category: gaming
 name: nrzGamePanel
-version: "1.0.0"
+version: "1.0.1"
 tagline: "Minecraft- und Factorio-Server verwalten - in Rust, im Host-Modus"
 icon: http://100.78.107.162:8390/nicorenezweers/nrzStore/raw/branch/main/nrz-gamepanel/icon.png
 port: 8700
